@@ -1,0 +1,39 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/solids/protos/SolidBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.22125225355030972 0.7403614080789975 0.6347538308086004 0.8800484670671835
+  position -3.2951195478488424 -2.584881545544971 3.68119925502591
+}
+Background {
+  skyColor [
+    0.4 0.7 1
+  ]
+}
+RectangleArena {
+  floorSize 3 3
+  floorTileSize 0.25 0.25
+}
+SolidBox {
+  translation 0 0 0.1
+  size 0.2 0.2 0.2
+}
+SolidBox {
+  translation 0 -1 0.1
+  name "box(1)"
+  size 0.1 0.8 0.2
+}
+SolidBox {
+  translation 1 1 0.1
+  name "box(2)"
+  size 0.5 0.2 0.2
+}
+SolidBox {
+  translation -1 0 0.1
+  name "box(3)"
+  size 0.7 0.1 0.2
+}

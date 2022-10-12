@@ -1,0 +1,68 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/solids/protos/SolidBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5353481577582384 -0.5914145614428954 -0.6030183799007857 4.316907234764589
+  position -1.7788910634367043 -0.8275708858171755 7.643466352501429
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 4.25 4.25
+}
+SolidBox {
+  translation -1 1.25 0.125
+  size 0.75 0.25 0.25
+}
+SolidBox {
+  translation 0.625 1.25 0.125
+  name "box(4)"
+  size 2 0.25 0.25
+}
+SolidBox {
+  translation -1.25 -0.125 0.125
+  name "box(1)"
+  size 0.25 3 0.25
+}
+SolidBox {
+  translation 1.5 -0.125 0.125
+  name "box(7)"
+  size 0.25 3 0.25
+}
+SolidBox {
+  translation -0.25 0.5 0.125
+  name "box(5)"
+  size 0.25 1.75 0.25
+}
+SolidBox {
+  translation 0.125 -1.48 0.125
+  name "box(2)"
+  size 3 0.25 0.25
+}
+E-puck {
+  hidden translation_1 0 0.026 0.02
+  hidden rotation_1 0 1 0 2.9802322387695313e-08
+  hidden translation_2 0 -0.026 0.02
+  hidden rotation_2 0 0.9999999999999999 0 2.9802322387695313e-08
+  translation -1.7499999999032267 1.7500000000178157 -6.391454876150497e-05
+  rotation 0.999861188381461 -0.016661451554224452 7.203941316339829e-07 1.1908991513599087e-07
+  controller "astar"
+  turretSlot [
+    GPS {
+      name "mid_gps"
+    }
+    GPS {
+      translation 0.04 0 0
+      name "front_gps"
+    }
+  ]
+}
